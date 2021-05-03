@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>About python</title>
+      <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script>
+           $(document).ready(function(){
+               $('#click-event').click(function(){
+                  alert( "Handler for .click() called." );
+               });
+
+               $('#hide-event').click(function(){
+                  $('#hide-paragraph').hide();
+               });
+               $('button.show-event').click(function(){
+                  $('p.show-event').show();
+               });
+               $('button.toggle-event').click(function(){
+                 $('p.toggle-event').toggle(1000);
+               });
+               $('button.Slide-Down-event').click(function(){
+                 $('p.Slide-Down-event').slideDown();
+               });
+               $('button.Slide-Up-event').click(function(){
+                 $('p.Slide-Up-event').slideUp();
+               });
+               $('button.Slide-Toggle-event').click(function(){
+                 $('p.Slide-Toggle-event').slideToggle();
+               });
+               $('button.fadeIn-event').click(function(){
+                 $('p.fade-event').fadeIn();
+               });
+               $('button.fadeOut-event').click(function(){
+                 $('p.fade-event').fadeOut();
+               });
+               $('button.addClass-event').click(function(){
+                 $('p.addClass-event').addClass("intro");
+               });
+               $('button.before-event').click(function(){
+                 $('p.before-event').before("<h2> Hellow World before! </h2>");
+               });
+               $('button.after-event').click(function(){
+                 $('p.after-event').after("<h2> Hellow World after! </h2>");
+               });
+               $('button.append-event').click(function(){
+                 $('p.append-event').append("<b> Hellow World append! </b>");
+                        //or 
+                        //  $('p.append-event').append("<span> Hellow World append! </span>");
+                        //or 
+                        // $('p.append-event').append("Hellow World append!");
+               });
+               $('button.html-event').click(function(){
+                 $('p.html-event').html("<h2> Hellow World append! </h2>");
+               });
+               $('button.attr-event').click(function(){
+                 $('img.attr-event').attr("width", "500");
+               });
+               $('button.val-event').click(function(){
+                $('textarea.val-event').val("hi");
+               });
+
+               $('button.text-event').click(function(){
+                $('p.text-event').text("hi");
+               });
+
+
+            
+
+
+           });
+      </script>
+      <style>
+        .intro {
+          font-size: 150%;
+          color: red;
+        }
+        </style>
+   </head>
+   <body>
+       <main>
+        <h1>.click Event</h1>
+        <button id="click-event">Click Event</button>
+        <p>Bind an event handler to the "click" JavaScript event, or trigger that event on an element.</p>
+        <hr>
+        <h1>.Hide Event</h1>
+        <button id="hide-event">Hide Event</button>
+        <p id="hide-paragraph">Click on the button to hide me!.</p>
+        <hr>
+        <h1>.Show Event</h1>
+        <button class="show-event">Show Event</button>
+        <p class="show-event" style="display: none">Once you clicked on the button i will show up!.</p>
+        <hr>
+        <h1>.Toggle Event</h1>
+        <button class="toggle-event">Toggle Event</button>
+        <p class="toggle-event">Once you clicked on the button i will toggle my status!.</p>
+        <hr>
+        <h1>.Slide-Down Event</h1>
+        <button class="Slide-Down-event">Slide Down Event</button>
+        <p class="Slide-Down-event" style="display: none">Once you clicked on the button i will slide down!.</p>
+        <hr>
+        <h1>.Slide-Up Event</h1>
+        <button class="Slide-Up-event">Slide Up Event</button>
+        <p class="Slide-Up-event" >Once you clicked on the button i will slide up!.</p>
+        <hr>
+        <h1>.Slide-Toggle Event</h1>
+        <button class="Slide-Toggle-event">Slide Toggle Event</button>
+        <p class="Slide-Toggle-event" >Once you clicked on the button i will toggle slide!.</p>
+        <hr>
+
+        <h1>.fadeIn and fadeOut Event</h1>
+        <button class="fadeIn-event">fade In Event</button>
+        <button class="fadeOut-event">fade Out Event</button>
+        <p class="fade-event" style="display: none">Once you clicked on the button i will fade!.</p>
+        <hr>
+        <h1>.AddClass Event</h1>
+        <button class="addClass-event">Add Class Event</button>
+        <p class="addClass-event" >Once you clicked on the button i will be given a class!.</p>
+        <hr>
+
+        <h1>.before Event</h1>
+        <button class="before-event">before Event</button>
+        <p class="before-event" >Once you clicked on the button a heading will be added before me!.</p>
+        <hr>
+
+        <h1>.after Event</h1>
+        <button class="after-event">before Event</button>
+        <p class="after-event" >Once you clicked on the button a heading will be added beafterfore me!.</p>
+        <hr>
+
+        <h1>.append Event</h1>
+        <button class="append-event">Append Event</button>
+        <p class="append-event" >Once you clicked on the button a heading will be appended to me!.</p>
+        <hr>
+
+        <h1>.html Event</h1>
+        <button class="html-event">Html Event</button>
+        <p class="html-event" >Once you clicked on the button i will be replaced by a heading!.</p>
+        <hr>
+
+        <h1>.attr Event</h1>
+        <button class="attr-event">Attr Event</button>
+        <img class="attr-event" src="person.PNG" alt="person img" width="284" height="213">
+        <hr>
+
+        <h1>.val Event</h1>
+        <button class="val-event">Val Event</button>
+        <textarea class="val-event"></textarea>
+        <hr>
+
+        <h1>.text Event</h1>
+        <button class="text-event">text Event</button>
+        <p class="text-event"> nnnnnnnn </p>
+        <hr>
+
+
+        
+
+ 
+       </main>
+      
+
+   </body>
+</html>

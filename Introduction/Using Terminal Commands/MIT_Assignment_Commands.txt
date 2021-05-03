@@ -1,0 +1,9 @@
+1. showing all locations and items
+ls 
+2.moving to a new location
+cd MIT
+3. to backtrack i used "cd.." command
+4. to interact with things
+less WelcomeLetter
+5. to see where i am
+pwd

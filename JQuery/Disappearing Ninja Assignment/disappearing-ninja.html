@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Disappearing Ninja</title>
+      <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script>
+           $(document).ready(function(){
+               $('img').click(function(){
+                  $(this).hide();
+               });
+               $('button').click(function(){
+                  $('img').show();
+               });
+
+
+           });
+      </script>
+   </head>
+   <body>
+       <div style="justify-content: center; width: 800px; padding: 20px;">
+            <div style="text-align: center;">
+                <b>jQuery - assignment 1</b>
+            </div>
+            
+            <div style="display: flex;justify-content: center;margin: 15px;"> 
+                    
+                    <img  src="CSS.png" alt="css img" width="100" padding="13px">
+                    <img  src="CSS.png" alt="css img" width="100" padding="13px">
+                    <img  src="CSS.png" alt="css img" width="100">
+                    <img  src="CSS.png" alt="css img" width="100">
+                </div>
+                <div  style="display: flex;justify-content: center;">
+                    <img  src="CSS.png" alt="css img" width="100">
+                    <img  src="CSS.png" alt="css img" width="100">
+                    <img  src="CSS.png" alt="css img" width="100">
+                    <img  src="CSS.png" alt="css img" width="100">
+                    
+                </div>
+                <div style="align-content: center; display: flex;" >
+                  <button style="background-color: rgb(120, 236, 4); margin: 30px;">Restore</button>
+                </div>
+       </div>
+    
+     
+
+   </body>
+</html>

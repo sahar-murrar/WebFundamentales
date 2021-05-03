@@ -1,0 +1,150 @@
+1. Sigma
+function sigma(num){
+    var sum=0;
+    for(var i=1; i<= num; i++){
+        sum+=i;
+
+    }
+    return sum;
+}
+
+var result = sigma(5);
+console.log(result);
+
+2. Factorial
+function factorial(num){
+    var mul=1;
+    for(var i=1; i<= num; i++){
+        mul*=i;
+
+    }
+    return mul;
+}
+
+var result = factorial(5);
+console.log(result);
+
+3. Fibonacci 
+function fibonacci(num){
+    var fib_0=0;
+    var fib_1=1;
+    var fib=[];
+    fib.push(fib_0, fib_1);
+    var fib_element;
+    for(var i=2; i<= num; i++){
+        fib[i]= fib[i-1] + fib[i-2];
+
+    }
+    fib_element=fib[num]
+    return fib_element;
+}
+
+var result = fibonacci(6);
+console.log(result);
+
+4. Array: Second-to-Last:
+function secondToLast(arr){
+ 
+  if(arr.length < 2){
+      return null;
+  }
+  else{
+    console.log(arr[arr.length -2]);
+  }
+
+}
+var arr=[42, true, 4, "Liam", 7];
+ secondToLast(arr);
+
+5. Array: Nth-to-Last:
+function nthToLast(arr, num){
+    return arr[arr.length - num];
+}
+var arr=[5,2,3,6,4,9,7];
+var result= nthToLast(arr, 5);
+console.log(result);
+
+6.Array: Second-Largest: 
+function secondLargest(arr){
+    var count=0;
+    var max=arr[0];
+    var newarray=[];
+    for(var i=1; i<arr.length; i++){
+        if(arr[i] >max){
+            max=arr[i];
+        }
+        else{
+            newarray.push(arr[i]);
+        }
+
+    }
+    var secondMax=newarray[0];
+    for(var i=0; i<newarray.length; i++){
+        if(newarray[i] >secondMax){
+            secondMax=newarray[i];
+        }
+
+    }
+
+    return secondMax;
+}
+var arr=[42,1,4,3.14,7];
+var result= secondLargest(arr);
+console.log(result);
+
+===============================================
+using 1 for loop:
+
+function secondLargest(arr){
+    var max1=arr[0];
+    var max2=arr[1];
+    for(var i=0; i<arr.length; i++){
+        if(arr.length < 2){
+            return null;
+        }
+
+        else if(arr[i]>max1){
+            max2 = max1;
+            max1 = arr[i];
+
+        }
+
+        else if(arr[i]>max2 && arr[i]<max1){
+            max2=arr[i];
+        }
+        
+    }
+return max2;
+}
+
+
+
+var arr=[9,42,10,3.14,20];
+var result= secondLargest(arr);
+console.log(result);
+
+
+7. Double Trouble:
+
+function doubleTrouble(arr){
+   var count=1;
+   var newarray=[];
+   
+    for(var i=0; i<arr.length ; i++){{
+        while(count<3){
+            newarray.push(arr[i]);
+            count++;
+
+        }
+        count=1;
+    }
+  
+
+    }
+    return newarray;
+}
+var arr=[4, "Ulysses", 42, false];
+var result= doubleTrouble(arr);
+console.log(result);
+
+

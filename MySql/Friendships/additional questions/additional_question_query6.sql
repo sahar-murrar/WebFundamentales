@@ -1,0 +1,1 @@
+delete from friendships where friendships.user_id = 2 and friendships.friend_id = 5

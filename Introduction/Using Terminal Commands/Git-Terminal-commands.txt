@@ -1,0 +1,36 @@
+1. to Navigate to your Desktop
+cd Desktop
+2. Create a new directory, call it 'test'
+mkdir test
+3.Make files called index.html, style.css, commands.txt inside the test directory
+touch index.html
+touch styles.css
+touch commands.txt
+4. Make a copy of index.html and call it index_2.html
+cp index.html index_2.html
+5. Navigate back to you desktop and make another directory, call it destination
+cd ..
+mkdir destination
+6. Move the index_2.html file to the 'destination' directory
+ mv index_2.html ../destination
+7. In the 'test' directory, remove the 'styles.css' file
+rm styles.css
+8. Remove/delete the 'destination' directory
+cd ..
+rm -rf destination
+9. Display the contents of commands.txt in the terminal
+cd test
+cat commands.txt
+
+***to open a file in the current directory type in git bash terminal .. :
+open "name of the file" .
+
+
+***to open a file of code in visual studio, go to the file path and type cmd inside it then enter, it will
+open the cmd and then type "code ." to run the visual studio.
+
+***to clome a repositary in github using git:
+open the git bash from the path that you want to save the cloned version in it.
+type this command: git clone -b *branch name* *url to repository*
+==so it will be like this for a spesific repositary with a spesific name:
+git clone -b error_version https://github.com/Codingdojo-Trey/Debugging-jQuery.git

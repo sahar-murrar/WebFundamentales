@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Hover In/Out</title>
+      <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script>
+           $(document).ready(function(){
+               $('img').hover(function() {
+                  var temp=$(this).attr('data');
+                  $(this).attr('src', temp);
+
+               }, function(){
+                  var x= $(this).attr('data-org-src');
+                  $(this).attr('src',x);
+
+               }
+               );
+              
+              
+
+
+            });
+
+
+      </script>
+   </head>
+   <body>
+                    
+         <img id="img1" src="./img/flower1.PNG" data="./img/flower5.PNG" data-org-src="./img/flower1.PNG" width="100" height="250" border="3px solid #0000">
+         <img id="img2" src="./img/flower2.PNG" data="./img/flower6.PNG" data-org-src="./img/flower2.PNG" width="100" height="250" border="3px solid #0000">
+         <img id="img3" src="./img/flower3.PNG" data="./img/flower7.PNG" data-org-src="./img/flower3.PNG" width="100" height="250" border="3px solid #0000">
+         <img id="img4" src="./img/flower4.PNG" data="./img/flower8.PNG" data-org-src="./img/flower4.PNG" width="100" height="250" border="3px solid #0000">
+
+   </body>
+</html>
